@@ -1,0 +1,18 @@
+img {
+  height: 300px;
+}
+div {
+  float: right;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+}
+.gato {
+  color: red;
+}
+.perro {
+  color: green;
+}
+.pez {
+  color: blue;
+}

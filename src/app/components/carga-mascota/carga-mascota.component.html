@@ -1,0 +1,24 @@
+<div>
+
+    <form [formGroup]="mascotaForm">
+        <div>
+            <input formControlName="nombre" type="text" placeholder="Nombre">
+        </div>
+        <div>
+            <input formControlName="foto" type="text" placeholder="Path Foto">
+        </div>
+        <div class="caja">
+            <select formControlName="tipo">
+                <option value="Gato">Gato</option>
+                <option value="Perro">Perro</option>
+                <option value="Pez">Pez</option>
+            </select>
+        </div>
+        <input [disabled]="!mascotaForm.valid" class="btn primary" type="button" value="Cargar Mascota"
+            (click)="sendMascota() ">
+
+    </form>
+
+
+
+</div>

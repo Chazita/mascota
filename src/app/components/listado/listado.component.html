@@ -1,0 +1,36 @@
+<div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Imagen</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let mascota of mascotas">
+            <tr *ngIf="mascota.tipo === 'Gato'" class='gato'>
+
+                <th> {{mascota.nombre}} </th>
+                <th> {{mascota.tipo}} </th>
+                <th> <img src={{mascota.pathFoto}} height="150px"> </th>
+                <th> <input type="button" value="Detalles" (click)="sendMascota(mascota)" class="btn primary"></th>
+            </tr>
+            <tr *ngIf="mascota.tipo == 'Perro'" class="perro">
+
+                <th> {{mascota.nombre}} </th>
+                <th> {{mascota.tipo}} </th>
+                <th> <img src={{mascota.pathFoto}} height="150px"> </th>
+                <th> <input type="button" value="Detalles" (click)="sendMascota(mascota)" class="btn primary"></th>
+            </tr>
+            <tr *ngIf="mascota.tipo == 'Pez'" class="pez">
+
+                <th> {{mascota.nombre}} </th>
+                <th> {{mascota.tipo}} </th>
+                <th> <img src={{mascota.pathFoto}} height="150px"> </th>
+                <th> <input type="button" value="Detalles" (click)="sendMascota(mascota)" class="btn primary"></th>
+            </tr>
+        </tbody>
+    </table>
+</div>

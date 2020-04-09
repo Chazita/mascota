@@ -1,0 +1,44 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin-left: 10%;
+  margin-top: 4%;
+  border: 2px solid #ddd;
+
+  width: 70%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.gato {
+  color: red;
+}
+.perro {
+  color: green;
+}
+.pez {
+  color: blue;
+}
+
+div {
+  float: left;
+  width: 50%;
+}
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.primary {
+  background-color: #2196f3;
+}
+.primary:hover {
+  background-color: #0b7dda;
+}

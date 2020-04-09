@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Mascota"
+    }
+  },
+  "defaultProject": "Mascota",
+  "cli": {
+    "analytics": "ecedf3ac-3354-439e-baf7-403874fff9f8"
+  }
 }

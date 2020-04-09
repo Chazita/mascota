@@ -1,0 +1,65 @@
+form {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 500px;
+}
+
+input {
+  width: 94%;
+  padding: 15px;
+  margin: 0px 0px 10px 0px;
+  display: inline-block;
+  border: none;
+}
+input[type="text"] {
+  background-color: #f1f1f1;
+}
+
+.caja {
+  margin: 20px auto 40px auto;
+  border: 1px solid #d9d9d9;
+  height: 30px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+select {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px;
+  width: 100%;
+}
+select:focus {
+  outline: none;
+}
+.caja::after {
+  display: table-cell;
+  padding-top: 7px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  pointer-events: none;
+  font-size: large;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.primary {
+  background-color: #2196f3;
+}
+.primary:hover {
+  background-color: #0b7dda;
+}
